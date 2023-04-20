@@ -17,10 +17,11 @@
   <header>
     <ul class="nav border justify-content-between" style="height: 80px;font-size: 20px;">
       <li id="infor-icon">
-        <a class="nav-link" style="padding: 0;" href="/">
+        <a class="nav-link p-0" href="/">
           <img src="/infor-icon.png" alt="社徽" height="78.08px"> 
         </a>
       </li> 
+      <li id="name" class="p-0 align-self-center text-primary fs-3">建國中學資訊社</li>
       <li class="nav-item align-self-center" >
         <a class="nav-link active" aria-current="page" href="/event/" style="display: inline;">Event</a>
         <a class="nav-link" href="/team/" style="display: inline;">Team</a>
@@ -30,8 +31,40 @@
     </ul>
   </header>
   <main>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="200000">
+          <img src="images/all.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item" data-bs-interval="10">
+          <img src="" class="d-block w-100" alt="我不知道有什麼照片">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="/images/all3.jpg" class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <div>
-      <p>還沒東西</p>
+      <br>
+    </div>
+    <div id="社團簡介" class="container-fluid border m-0">
+      <div class="">
+        <p class="text-md-center fs-3">社團源起</p>
+        <p class="fs-4 text-md-start">
+          建中資訊社前身為「電腦研習委員會」，由建中第42屆的高一資優班學生於民國76年4月
+          所組成，後因欲發行刊物向學校申請許可未果，幾經討論後於民國77年11月11日召開成
+          立大會，「資訊社」正式成立並開始招收社員，因當時建中已有六年沒有新社團出現，在
+          校內一度造成轟動，使資訊社瞬間成為建中大社之一。
+        </p>
+      </div>
     </div>
   </main>
   <footer>
