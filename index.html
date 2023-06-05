@@ -10,60 +10,64 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    
+  <style>
+
+  </style>
 </head>
 
 <body>
   <header>
-    <ul class="nav border justify-content-between" style="height: 80px;font-size: 20px;">
-      <li id="infor-icon">
-        <a class="nav-link p-0" href="/" style="display: inline; ">
-          <img src="/infor-icon.png" alt="社徽" height="78.08px"> 
+    <ul class="nav border justify-content-between" style="height: 10vh;font-size: 20px;">
+      <li class="d-inline-flex" id="infor-icon">
+        <a class="nav-link p-0 align-self-center" href="/">
+          <img src="/infor-icon.png" alt="社徽" style="height: 10vh;"> 
         </a>
-        <p class="p-0 align-self-center text-primary" id="name" style="display: inline; margin: auto;">建國中學資訊社</p>
+        <a class="align-self-center" href="/" style="text-decoration: none;">
+          <p class="p-0 align-self-center text-primary m-auto d-inline" id="name" style="font-size: 30px;">建國中學資訊社</p>
+        </a>
       </li> 
       <li class="nav-item align-self-center" >
-        <a class="nav-link active" aria-current="page" href="/team/" style="display: inline;">Team</a>
-        <a class="nav-link" href="/izcc/" style="display: inline;">IZCC</a>
-        <a class="nav-link" href="/event/" style="display: inline;">Event</a>
-        <a class="nav-link disabled" style="display: inline;">Disabled</a>
+        <a class="nav-link active d-inline" aria-current="page" href="/team/">Team</a>
+        <a class="nav-link d-inline" href="/izcc/">IZCC</a>
+        <a class="nav-link d-inline" href="/event/">Event</a>
+        <a class="nav-link disabled d-inline">Disabled</a>
       </li>
     </ul>
   </header>
   <main>
-    <div class="container">
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="height: 600px;">
+    <div class="bg-light">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="4000">
-            <img src="/images/all.jpg" class="d-block w-100" style="height: 600px; object-fit: contain;" title="35th全體幹部" alt="35th全體幹部">
+            <img src="/images/all2.jpg" class="d-block w-100" style="height: 575px; object-fit: cover;" title="35th全體幹部" alt="35th全體幹部">
           </div>
           <div class="carousel-item" data-bs-interval="4000">
-            <img src="/images/all3.jpg" class="d-block w-100" style="height: 600px; object-fit: contain;" title="社慶合照" alt="社慶合照">
+            <img src="/images/all3.jpg" class="d-block w-100" style="height: 575px; object-fit: cover;" title="社慶合照" alt="社慶合照">
           </div>
           <div class="carousel-item" data-bs-interval="4000">
-            <img src="/images/normalclass1.png" class="d-block w-100" style="height: 600px; object-fit: contain;" title="正式社課1" alt="正式社課1">
+            <img src="/images/normalclass1.png" class="d-block w-100" style="height: 575px; object-fit: cover;" title="正式社課1" alt="正式社課1">
           </div>
           <div class="carousel-item" data-bs-interval="4000">
-            <img src="/images/normalclass2.png" class="d-block w-100" style="height: 600px; object-fit: contain;" title="正式社課2" alt="正式社課2">
+            <img src="/images/normalclass2.png" class="d-block w-100" style="height: 575px; object-fit: cover;" title="正式社課2" alt="正式社課2">
           </div>
           <div class="carousel-item" data-bs-interval="4000">
-            <img src="/images/afterclass1.jpg" class="d-block w-100" style="height: 600px; object-fit: contain;" title="放學社課1" alt="放學社課1">
+            <img src="/images/afterclass1.jpg" class="d-block w-100" style="height: 575px; object-fit: cover;" title="放學社課1" alt="放學社課1">
           </div>
           <div class="carousel-item" data-bs-interval="4000">
-            <img src="/images/afterclass2.jpg" class="d-block w-100" style="height: 600px; object-fit: contain;" title="放學社課2" alt="放學社課2">
+            <img src="/images/afterclass2.jpg" class="d-block w-100" style="height: 575px; object-fit: cover;" title="放學社課2" alt="放學社課2">
           </div>
           <div class="carousel-item" data-bs-interval="4000">
-            <img src="/images/afterclass3.jpg" class="d-block w-100" style="height: 600px; object-fit: contain;" title="放學社課3" alt="放學社課3">
+            <img src="/images/afterclass3.jpg" class="d-block w-100" style="height: 575px; object-fit: cover;" title="放學社課3" alt="放學社課3">
           </div>
           <div class="carousel-item" data-bs-interval="4000">
-            <img src="/images/afterclass4.jpg" class="d-block w-100" style="height: 600px; object-fit: contain;" title="放學社課4" alt="放學社課4">
+            <img src="/images/afterclass4.jpg" class="d-block w-100" style="height: 575px; object-fit: cover;" title="放學社課4" alt="放學社課4">
           </div>
         </div>
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <button class="carousel-control-prev btn  btn-dark btn-hover" style="width: 10vw;" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <button class="carousel-control-next btn btn-dark btn-hover" style="width: 10vw;" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
