@@ -1,102 +1,165 @@
 <!doctype html>
-<html lang="en">
-
+<html lang="zh-Hant-TW">
 <head>
-  <title>社網test</title>
+  <title>INFOR 35th</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="x-icon" href="/favicon.ico">
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <style>
-
-  </style>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>  <!-- Custom styles for this template -->
+  <link href="/style/carousel.css" rel="stylesheet">
 </head>
-
 <body>
   <header>
-    <ul class="nav border justify-content-between" style="height: 10vh;font-size: 20px;">
-      <li class="d-inline-flex" id="infor-icon">
-        <a class="nav-link p-0 align-self-center" href="/">
-          <img src="/infor-icon.png" alt="社徽" style="height: 10vh;"> 
-        </a>
-        <a class="align-self-center" href="/" style="text-decoration: none;">
-          <p class="p-0 align-self-center text-primary m-auto d-inline" id="name" style="font-size: 30px;">建國中學資訊社</p>
-        </a>
-      </li> 
-      <li class="nav-item align-self-center" >
-        <a class="nav-link active d-inline" aria-current="page" href="/team/">Team</a>
-        <a class="nav-link d-inline" href="/izcc/">IZCC</a>
-        <a class="nav-link d-inline" href="/event/">Event</a>
-        <a class="nav-link disabled d-inline">Disabled</a>
-      </li>
-    </ul>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/" title="建國中學資訊社">建國中學資訊社</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="" title="首頁">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" title="簡介">簡介</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/members/" title="幹部">幹部</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/courses/" title="課程">課程</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/activities/" title="活動">活動</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/izcc/" title="IZCC">IZCC</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
   <main>
-    <div class="bg-light">
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="4000">
-            <img src="/images/all2.jpg" class="d-block w-100" style="height: 575px; object-fit: cover;" title="35th全體幹部" alt="35th全體幹部">
+    <div id="indexCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100" data-bs-interval="3000">
+          <img class="bd-placeholder-img h-100" width="100%" height="100%" src="/images/all5.jpg" title="建資大社課合照" alt="建資大社課合照">
+        </div>
+        <div class="carousel-item h-100" data-bs-interval="3000">
+          <img class="bd-placeholder-img h-100" width="100%" height="100%" src="/images/all2.jpg" title="建資35th幹部合照" alt="建資35th幹部合照">
+        </div>
+        <div class="carousel-item h-100" data-bs-interval="3000">
+          <img class="bd-placeholder-img h-100" width="100%" height="100%" src="/images/all4.jpg" title="2023建資社慶合照" alt="2023建資社慶合照">
+        </div>
+        <div class="carousel-item h-100" data-bs-interval="3000">
+          <img class="bd-placeholder-img h-100" width="100%" height="100%" src="/images/all6.jpg" title="建資寒訓合照" alt="建資寒訓合照">
+        </div>
+        <div class="carousel-item h-100" data-bs-interval="3000">
+          <img class="bd-placeholder-img h-100" width="100%" height="100%" src="/images/flaskclass.JPG" title="Flask放學社課成發合照" alt="Flask放學社課成發合照">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#indexCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#indexCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container">
+      <div class="card mb-3 w-100" id="announcement" style="background-color: inherit;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/images/icons/infor36-icon.jpg" class="img-fluid rounded-start w-100 h-100" style="object-fit: cover;" alt="...">
           </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img src="/images/all3.jpg" class="d-block w-100" style="height: 575px; object-fit: cover;" title="社慶合照" alt="社慶合照">
-          </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img src="/images/normalclass1.png" class="d-block w-100" style="height: 575px; object-fit: cover;" title="正式社課1" alt="正式社課1">
-          </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img src="/images/normalclass2.png" class="d-block w-100" style="height: 575px; object-fit: cover;" title="正式社課2" alt="正式社課2">
-          </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img src="/images/afterclass1.jpg" class="d-block w-100" style="height: 575px; object-fit: cover;" title="放學社課1" alt="放學社課1">
-          </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img src="/images/afterclass2.jpg" class="d-block w-100" style="height: 575px; object-fit: cover;" title="放學社課2" alt="放學社課2">
-          </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img src="/images/afterclass3.jpg" class="d-block w-100" style="height: 575px; object-fit: cover;" title="放學社課3" alt="放學社課3">
-          </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img src="/images/afterclass4.jpg" class="d-block w-100" style="height: 575px; object-fit: cover;" title="放學社課4" alt="放學社課4">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">我們退休了！</h5>
+              <p class="card-text">
+                一年前，青澀、懵懂的我們自學長們的手中接下了資訊社，我們從未想過自己也能和曾經崇拜著的學長姐們一樣，與友社攜手，克服一次又一次棘手而難纏的困境，舉辦一場又一場盛大而完整的活動。正因青春無法像遞迴那般不斷重複，我們格外珍惜著每個寶貴經驗，儘管過程不盡順遂，身體累積了不少疲憊，也不忘懷著滿腔熱血繼續邁向下個里程碑。
+                <br>
+                跟隨著四季嬗遞，我們走過了這段美好且充實的社團旅程，無論是茶會或迎新、秋遊或春遊、寒訓或暑訓，還是四校合辦的聯課與放課，抑或是在建中的每堂社課、培訓，這些經驗都使我們逐漸成為了那個上幹前僅存於理想中的自己。和當初剛踏入資訊領域的我們相比，現在的我們習得了在電資的汪洋大海中掌舵的方法，也建立起屬於自己的一條人脈，但不變的是，我們依然是那群充滿渴望與好奇的少年們，瞳中閃爍著希望的光芒，以及對未來的無限遐想。
+                <br>
+                如今，我們也算是得以不帶遺憾地退休了。期許學弟們在接下資訊社的薪火後，繼承我們對社團的熱情，發揚推廣資訊的美好，並將建資自由開放的精神繼續傳承下去。在此，也請大家繼續關注建中資訊社，繼續支持我們的學弟！
+                <br>
+                <br>
+                -INFOR 35th全體幹部 下台一鞠躬
+                <br>
+                <small class="text-muted">Last updated July 3, 2023</small>
+              </p>
+              <a class="btn btn-secondary" href="https://36.infor.org" role="button">下屆社網 &raquo;</a>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev btn  btn-dark btn-hover" style="width: 10vw;" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next btn btn-dark btn-hover" style="width: 10vw;" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
-    <div>
-      <br>
-    </div>
-    <div id="社團簡介" class="container-fluid border m-0">
-      <div class="">
-        <p class="text-md-center fs-3">社團源起</p>
-        <p class="fs-4 text-md-start">
-          建中資訊社前身為「電腦研習委員會」，由建中第42屆的高一資優班學生於民國76年4月所組成，後因欲發行刊物向學校申請許可未果，幾經討論後於民國77年11月11日召開成立大會，「資訊社」正式成立並開始招收社員，因當時建中已有六年沒有新社團出現，在校內一度造成轟動，使資訊社瞬間成為建中大社之一。
-        </p>
+      <div class="featurette" id="about">
+        <h2 class="featurette-heading">關於我們</h2>
+        <br>
+        <p class="lead">建國中學資訊社（英文全名：Chien Kuo Information Club，簡稱INFOR），自民國77年創社至今已邁入第35屆，為建國中學歷史悠久、最熱門的社團之一，聚集了各種資訊領域的專才及對資訊領域有極高興趣或熱忱者，有多位資訊競賽國手皆曾為本社社員，如楊承澔(2020 IOI銀牌)、林秉軒(2021 IOI金牌)、賴昭勳(2022 IOI銀牌)、張庭瑋(2023 IOI銀牌)等。</p>
+        <p class="lead">我們希望進來的社員都能以最適合自己的步調，找到自己有興趣的領域進行深入學習，我們也嘗試破除學長學弟間的隔閡，深化彼此的情誼，希望能讓社員們無須拘束進行交流，亦期望能成為資訊國手與專家的搖籃、想進入電資科系者的助力，用最高品質的課程與態度，全心全意服務社員、推廣資訊。</p>
       </div>
+      <hr class="featurette-divider">
+      <div class="row featurette" id="contact">
+        <div class="col-md-8">
+          <h2 class="featurette-heading">聯絡我們</h2>
+          <br>
+          <p><a class="btn btn-outline-success" href="mailto:infor.35th@gmail.com" target="_blank" title="Email">Email &raquo;</a></p>
+          <p><a class="btn btn-outline-primary" href="https://www.facebook.com/infor35th" target="_blank" title="Facebook">Facebook &raquo;</a></p>
+          <p><a class="btn btn-outline-danger" href="https://www.instagram.com/infor.35th" target="_blank" title="Instagram">Instagram &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/images/icons/infor-icon.png" width="400" height="400" aria-label="Placeholder: 400x400" title="社徽" alt="社徽">
+          <p class="lead text-center">社徽設計者：袁加恩</p>
+        </div>
+      </div>
+      <hr class="featurette-divider">
     </div>
   </main>
-  <footer>
-    <!-- place footer here -->
-    <p>Copyright © 2023 INFOR 建國中學資訊社</p>
+  <footer class="container">
+    <div class="row">
+      <div class="col-12 col-md">
+        <p>Copyright &copy; 2023 INFOR 35th</p>
+        <p><a class="text-secondary" href="https://getbootstrap.com/docs/5.3/examples/carousel/" title="Template">Carousel template for Bootstrap</a></p>
+        <p><a class="text-primary" href="#" title="Back to top">Back to top</a></p>
+      </div>
+      <div class="col-6 col-md">
+        <h5 class="fw-bold">社群連結</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-dark" href="https://www.instagram.com/infor.35th" target="_blank" title="Instagram">Instagram</a></li>
+          <li><a class="text-dark" href="https://www.facebook.com/infor35th" target="_blank" title="Facebook">Facebook</a></li>
+          <li><a class="text-dark" href="https://github.com/ck-infor/35th-website" target="_blank" title="GitHub Repo">GitHub Repo</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5 class="fw-bold">四校連結</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-dark" href="https://ckcsc.net" target="_blank" title="成功電研 35th">成功電研 35th</a></li>
+          <li><a class="text-dark" href="https://www.instagram.com/zsisc29th" target="_blank" title="中山資研 29th">中山資研 29th</a></li>
+          <li><a class="text-dark" href="https://www.instagram.com/cmioc_29th" target="_blank" title="景美電資 29th">景美電資 29th</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5 class="fw-bold">歷屆社網</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-dark" href="https://34.infor.org" target="_blank" title="INFOR 34th">INFOR 34th</a></li>
+          <li><a class="text-dark" href="https://infor33rd-vqf5pcbabq-de.a.run.app" target="_blank" title="INFOR 33rd">INFOR 33rd</a></li>
+          <li><a class="text-dark" href="https://32.infor.org" target="_blank" title="INFOR 32th">INFOR 32th</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
 </body>
-
 </html>
