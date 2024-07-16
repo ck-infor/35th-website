@@ -1,67 +1,148 @@
 <!doctype html>
-<html lang="en">
-
+<html lang="zh-Hant-TW">
 <head>
-  <title>社網test</title>
+  <title>IZCC | INFOR 35th</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="x-icon" href="/favicon.ico">
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <!-- Custom styles for this template -->
+  <link href="/style/carousel.css" rel="stylesheet">
 </head>
-
 <body>
   <header>
-    <ul class="nav border justify-content-between" style="height: 10vh;font-size: 20px;">
-      <li class="d-inline-flex" id="infor-icon">
-        <a class="nav-link p-0 align-self-center" href="/">
-          <img src="/infor-icon.png" alt="社徽" style="height: 10vh;"> 
-        </a>
-        <a class="align-self-center" href="/" style="text-decoration: none;">
-          <p class="p-0 align-self-center text-primary m-auto d-inline" id="name" style="font-size: 30px;">建國中學資訊社</p>
-        </a>
-      </li> 
-      <li class="nav-item align-self-center" >
-        <a class="nav-link active d-inline" aria-current="page" href="/team/">Team</a>
-        <a class="nav-link d-inline" href="/izcc/">IZCC</a>
-        <a class="nav-link d-inline" href="/event/">Event</a>
-        <a class="nav-link disabled d-inline">Disabled</a>
-      </li>
-    </ul>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/" title="建國中學資訊社">建國中學資訊社</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/" title="首頁">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" title="簡介">簡介</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/members/" title="幹部">幹部</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/courses/" title="課程">課程</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/activities/" title="活動">活動</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="" title="IZCC">IZCC</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
   <main>
-    <h2>簡介</h2>
-    <div id="intro">
-      <p>
-        由建國中學資訊社、成功高中電子計算機研習社、中山女高資訊研究社、景美女中電腦資訊社等四個社團組成，會合辦各種兼具學術性與休閒性的活動，例如暑訓、寒訓、秋遊、春遊等，除此之外我們也會一同開設放學課程、討論資訊相關的知識，內部有許多不同專長的幹部，從網頁設計、競技程式到機器學習都有，歡迎大家加入我們IZCC的大家庭，與我們一起遨遊在資訊科技的大海中。
-      </p>
+    <div id="izccBanner" class="carousel" data-bs-ride="carousel">
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100">
+          <img class="bd-placeholder-img h-100" width="100%" height="100%" src="/images/wintercamp.JPG" title="IZCC寒訓" alt="IZCC寒訓">
+        </div>
+      </div>
     </div>
-    <h2>成員</h2>
-    <div id="ckcsc">
-      <h5>成功電研</h5>
-    </div>
-    <div id="zsisc">
-      <h5>中山資研</h5>
-    </div>
-    <div id="cmioc">
-      <h5>景美電資</h5>
+    <div class="container">
+      <div class="row featurette" id="izcc">
+        <div class="col-md-8">
+          <h2 class="featurette-heading">IZCC</h2>
+          <br>
+          <p class="lead">
+            建成楓景四校電資社團交流群，由<a class="text-secondary" href="/about/">建國中學資訊社</a>、<a class="text-secondary" href="#ckcsc">成功高中電子計算機研習社</a>、<a class="text-secondary" href="#zsisc">中山女高資訊研究社</a>、<a class="text-secondary" href="#cmioc">景美女中電腦資訊社</a>等四個社團組成，會合辦各種兼具學術性與休閒性的活動，例如暑訓、寒訓、秋遊、春遊等，除此之外我們也會一同開設放學課程、討論資訊相關的知識，內部有許多不同專長的幹部，從網頁設計、競技程式到機器學習都有，歡迎大家加入我們IZCC的大家庭，與我們一起遨遊在資訊科技的大海中。
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" src="/images/icons/izcc-icon.png" title="IZCC" alt="IZCC">
+          <p class="lead text-center">設計者：Yeeda</p>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette" id="zsisc">
+        <div class="col-md-8 order-md-2">
+          <h2 class="featurette-heading">中山資研 ZSISC 29th</h2>
+          <p class="lead">中山女高資訊研究社，簡稱楓資。</p>
+          <p><a class="btn btn-outline-danger mt-1" href="https://www.instagram.com/zsisc29th" target="_blank" title="中山資研 29th Instagram">社團Instagram &raquo;</a></p>
+        </div>
+        <div class="col-md-4 order-md-1">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/images/icons/zsisc-icon.webp" width="400" height="400" aria-label="Placeholder: 400x400" title="ZSISC 29th 社徽" alt="ZSISC 29th 社徽">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette" id="ckcsc">
+        <div class="col-md-8">
+          <h2 class="featurette-heading">成功電研 CKCSC 35th</h2>
+          <p class="lead">成功高中電子計算機研習社，簡稱成電。</p>
+          <p>
+            <a class="btn btn-outline-success mt-1" href="https://ckcsc.net" target="_blank" title="成功電研 35th Facebook">社團網站 &raquo;</a>
+            <a class="btn btn-outline-primary mt-1" href="https://www.facebook.com/club.ckcsc.info" target="_blank" title="成功電研 35th Facebook">社團Facebook &raquo;</a>
+            <a class="btn btn-outline-danger mt-1" href="https://www.instagram.com/ckcsc35th_diary" target="_blank" title="成功電研 35th Instagram">社團Instagram &raquo;</a>
+          </p>
+          
+        </div>
+        <div class="col-md-4">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/images/icons/ckcsc-icon.jpg" width="400" height="400" aria-label="Placeholder: 400x400" title="CKCSC 35th 社徽" alt="CKCSC 35th 社徽">    
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette" id="cmioc">
+        <div class="col-md-8 order-md-2">
+          <h2 class="featurette-heading">景美電資 CMIOC 29th</h2>
+          <p class="lead">景美女中電腦資訊社，簡稱景資。</p>
+          <p>
+            <a class="btn btn-outline-primary" href="https://www.facebook.com/profile.php?id=100083216294620" target="_blank" title="景美電資 29th Facebook">社團Facebook &raquo;</a>
+            <a class="btn btn-outline-danger" href="https://www.instagram.com/cmioc_29th" target="_blank" title="景美電資 29th Instagram">社團Instagram &raquo;</a>
+          </p>
+        </div>
+        <div class="col-md-4 order-md-1">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/images/icons/cmioc-icon.jpg" width="400" height="400" aria-label="Placeholder: 400x400" title="CMIOC 29th 社徽" alt="CMIOC 29th 社徽">    
+        </div>
+      </div>
+      <hr class="featurette-divider">
     </div>
   </main>
-  <footer>
-    <!-- place footer here -->
-    <p>Copyright © 2023 INFOR 建國中學資訊社</p>
+  <footer class="container">
+    <div class="row">
+      <div class="col-12 col-md">
+        <p>Copyright &copy; 2023 INFOR 35th</p>
+        <p><a class="text-secondary" href="https://getbootstrap.com/docs/5.3/examples/carousel/" title="Template">Carousel template for Bootstrap</a></p>
+        <p><a class="text-primary" href="#" title="Back to top">Back to top</a></p>
+      </div>
+      <div class="col-6 col-md">
+        <h5 class="fw-bold">社群連結</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-dark" href="https://www.instagram.com/infor.35th" target="_blank" title="Instagram">Instagram</a></li>
+          <li><a class="text-dark" href="https://www.facebook.com/infor35th" target="_blank" title="Facebook">Facebook</a></li>
+          <li><a class="text-dark" href="https://github.com/ck-infor/35th-website" target="_blank" title="GitHub Repo">GitHub Repo</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5 class="fw-bold">四校連結</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-dark" href="https://ckcsc.net" target="_blank" title="成功電研 35th">成功電研 35th</a></li>
+          <li><a class="text-dark" href="https://www.instagram.com/zsisc29th" target="_blank" title="中山資研 29th">中山資研 29th</a></li>
+          <li><a class="text-dark" href="https://www.instagram.com/cmioc_29th" target="_blank" title="景美電資 29th">景美電資 29th</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5 class="fw-bold">歷屆社網</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-dark" href="https://34.infor.org" target="_blank" title="INFOR 34th">INFOR 34th</a></li>
+          <li><a class="text-dark" href="https://infor33rd-vqf5pcbabq-de.a.run.app" target="_blank" title="INFOR 33rd">INFOR 33rd</a></li>
+          <li><a class="text-dark" href="https://32.infor.org" target="_blank" title="INFOR 32th">INFOR 32th</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
 </body>
-
 </html>
