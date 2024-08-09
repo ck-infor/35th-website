@@ -85,7 +85,7 @@
       </button>
     </div>
     <div class="container">
-      <div class="featurette">
+      <div class="featurette" id="normalclass">
         <h2 class="featurette-heading">正式社課</h2>
         <p class="lead">為學校排定的社團活動課，需為正社社員才可參加。上學期主要帶領社員接觸多種資訊領域相關內容，希望讓社員們能從中找到自己有興趣的部分，利用課餘時間自行深入學習、加以應用；下學期則以Python為主軸，有系統性地帶領社員學習，從認識基本語法開始，帶領社員了解基本的演算法，並嘗試與其他技術結合，進行實際應用並產出成果。</p>
         <p class="lead">上課地點：建國中學教學資源大樓3F 電腦教室二</p>
@@ -114,6 +114,9 @@
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#secondnormalclass">
                 課程介紹 &raquo;
               </button>
+              <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#classhomeworkans">
+                作業解答 &raquo;
+              </button>
             </div>
           </div>
         </div>
@@ -128,7 +131,7 @@
                   <img src="/images/courses/firstnormalclass_content.png" class="w-100" alt="上學期：資訊領域探索">
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
                 </div>
               </div>
             </div>
@@ -144,14 +147,37 @@
                   <img src="/images/courses/secondnormalclass_content.png" class="w-100" alt="下學期：Python從入門到應用">
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="classhomeworkans" tabindex="-1" aria-labelledby="classhomeworkanslabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" style="max-width: 1000px;">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="classhomeworkanslabel">INFOR大社課作業 參考解答</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <script src="https://gist.github.com/BlueBoy247/490f4367d0f40bb9fb31008b2a9f0c34.js"></script>
+                </div>
+                <div class="modal-footer">
+                  <a class="btn btn-info" href="https://codeforces.com/group/xtIxOOO4I2/contest/438925" target="_blank">查看題目</a>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
                 </div>
               </div>
             </div>
         </div>
       </div>
+      <script>
+        if (location.search == "?classhomeworkans=true") {
+          let exampleModal = new bootstrap.Modal(document.getElementById('classhomeworkans'));
+          exampleModal.show();
+        }
+      </script>
       <hr class="featurette-divider">
-      <div class="featurette">
+      <div class="featurette" id="afterclass">
         <h2 class="featurette-heading">放學社課</h2>
         <p class="lead">為 <a class="text-secondary" href="/izcc/">IZCC</a> 共同合辦，四校之正社社員及地社社員皆可參加。透過開設不同的課程，由社員自由選擇有興趣的課程，以較長的教學時數，內容囊括理論、概念與實作，讓社員能有完整的學習，並在課程結束後，能有實際應用操作的能力。</p>
         <p class="lead">上課地點：建國中學教學資源大樓3F 電腦教室二</p>
@@ -238,7 +264,7 @@
                   <img src="/images/courses/aiclass_content.png" class="w-100" alt="人工智慧與機器學習">
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
                 </div>
               </div>
             </div>
@@ -254,7 +280,7 @@
                   <img src="/images/courses/quantumclass_content.png" class="w-100" alt="量子電腦">
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
                 </div>
               </div>
             </div>
@@ -270,7 +296,7 @@
                   <img src="/images/courses/pythonclass_content.png" class="w-100" alt="Python">
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
                 </div>
               </div>
             </div>
@@ -286,7 +312,7 @@
                   <img src="/images/courses/cppclass_content.png" class="w-100" alt="C++ Basic">
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
                 </div>
               </div>
             </div>
@@ -302,7 +328,7 @@
                   <img src="/images/courses/webclass_content.png" class="w-100" alt="網頁">
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
                 </div>
               </div>
             </div>
@@ -363,7 +389,7 @@
                   <img src="/images/courses/notionclass_content.png" class="w-100" alt="Notion">
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
                 </div>
               </div>
             </div>
@@ -379,7 +405,7 @@
                   <img src="/images/courses/cpp2class_content.png" class="w-100" alt="C++ Advanced">
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
                 </div>
               </div>
             </div>
@@ -403,7 +429,7 @@
                     <img src="/images/courses/flaskclass_content.png" class="w-100" alt="Flask">
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
                 </div>
               </div>
             </div>
